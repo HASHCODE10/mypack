@@ -1,105 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Free Digital Download</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Free Digital Download</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+<style>
+:root {
+    --main: #00ff88;
+    --dark: #0f0f0f;
+    --glass: rgba(255,255,255,0.12);
+}
 
-        header {
-            background: #111;
-            color: #fff;
-            padding: 20px;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: radial-gradient(circle at top, #111, #000);
+    color: #fff;
+    text-align: center;
+}
 
-        .ad-box {
-            background: #eaeaea;
-            border: 2px dashed #aaa;
-            padding: 20px;
-            margin: 20px 0;
-            color: #555;
-            font-size: 14px;
-        }
+/* HEADER */
+header {
+    padding: 30px 15px;
+    animation: slideDown 1s ease;
+}
 
-        .product {
-            background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+header h1 {
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    margin: 0;
+}
 
-        /* Preview image style */
-        .preview-img {
-            width: 100%;
-            max-width: 500px;
-            border-radius: 8px;
-            margin: 15px 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-        }
+header p {
+    opacity: 0.8;
+    margin-top: 8px;
+}
 
-        .download-btn {
-            background: #28a745;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+}
 
-        .download-btn:hover {
-            background: #218838;
-        }
+/* PRODUCT CARD */
+.product {
+    background: var(--glass);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+    animation: fadeUp 1.2s ease;
+}
 
-        footer {
-            margin-top: 40px;
-            padding: 15px;
-            background: #222;
-            color: #ccc;
-            font-size: 14px;
-        }
-    </style>
+/* IMAGE */
+.preview-img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 15px;
+    margin: 20px 0;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.preview-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+}
+
+/* TEXT */
+.product h2 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+}
+
+.product p {
+    max-width: 600px;
+    margin: auto;
+    opacity: 0.85;
+    line-height: 1.6;
+}
+
+/* BUTTON */
+.download-btn {
+    margin-top: 30px;
+    background: linear-gradient(135deg, #00ff88, #00ccff);
+    color: #000;
+    padding: 16px 36px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0,255,136,0.4);
+}
+
+.download-btn:active {
+    transform: scale(0.95);
+}
+
+/* STATUS */
+#status {
+    margin-top: 18px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .product {
+        padding: 25px 15px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
     <h1>🎁 Free Digital Product</h1>
-    <p>Preview before download</p>
+    <p>Preview • Download • Enjoy</p>
 </header>
 
 <div class="container">
 
-    <!-- Top Ad -->
-    
-
     <div class="product">
         <h2>🔥 Digital Pack Name</h2>
 
-        <!-- Preview Image -->
-        <img src="assets/pre.png" alt="Product Preview" class="preview-img">
+        <img src="assets/pre.png" alt="Preview" class="preview-img">
 
         <p>
-            High-quality digital product.  
-            100% free download – supported by ads.
+            High-quality digital pack with premium assets.  
+            100% free download — instant access.
         </p>
-
-        
 
         <button class="download-btn" onclick="startDownload()">
             ⬇ Download Now
@@ -108,25 +181,23 @@
         <p id="status"></p>
     </div>
 
-  
-
 </div>
 
 <footer>
-    © 2025 YourWebsite • Free Downloads with Ads
+    © 2025 YourWebsite • Free Digital Downloads
 </footer>
 
 <script>
-    function startDownload() {
-        document.getElementById("status").innerHTML =
-            "Preparing download... Please wait";
+function startDownload() {
+    const status = document.getElementById("status");
+    status.innerHTML = "⏳ Preparing your download...";
 
-        setTimeout(() => {
-            window.location.href = "assets/Untitled.ffx";
-        }, 3000);
-    }
+    setTimeout(() => {
+        status.innerHTML = "✅ Download started!";
+        window.location.href = "assets/Untitled.ffx";
+    }, 2500);
+}
 </script>
 
 </body>
 </html>
-
