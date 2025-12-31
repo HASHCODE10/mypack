@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Digital Download</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background: #111;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .ad-box {
+            background: #eaeaea;
+            border: 2px dashed #aaa;
+            padding: 20px;
+            margin: 20px 0;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .product {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .download-btn {
+            background: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .download-btn:hover {
+            background: #218838;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 15px;
+            background: #222;
+            color: #ccc;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎁 Free Digital Product</h1>
+    <p>Download premium content for FREE</p>
+</header>
+
+<div class="container">
+
+    <!-- Top Ad -->
+    <div class="ad-box">
+        🔸 Ad Space (Top Banner) <br>
+        <!-- Paste AdSense / Ad Network Code Here -->
+    </div>
+
+    <div class="product">
+        <h2>🔥 Digital Pack Name</h2>
+        <p>
+            This free digital product includes high-quality resources.
+            No payment required — supported by ads.
+        </p>
+
+        <!-- Middle Ad -->
+        <div class="ad-box">
+            🔸 Ad Space (Rectangle / Native Ad)
+        </div>
+
+        <button class="download-btn" onclick="startDownload()">
+            ⬇ Download Now
+        </button>
+
+        <p id="status"></p>
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="ad-box">
+        🔸 Ad Space (Bottom Banner)
+    </div>
+
+</div>
+
+<footer>
+    © 2025 YourWebsite • Free Downloads with Ads
+</footer>
+
+<script>
+    function startDownload() {
+        document.getElementById("status").innerHTML =
+            "Preparing download... Please wait";
+
+        setTimeout(() => {
+            window.location.href = "assets/Untitled.ffx"; 
+            // replace with your real file link
+        }, 3000);
+    }
+</script>
+
+</body>
+</html>
