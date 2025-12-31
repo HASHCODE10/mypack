@@ -42,6 +42,15 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
+        /* Preview image style */
+        .preview-img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
         .download-btn {
             background: #28a745;
             color: white;
@@ -71,22 +80,25 @@
 
 <header>
     <h1>🎁 Free Digital Product</h1>
-    <p>Download premium content for FREE</p>
+    <p>Preview before download</p>
 </header>
 
 <div class="container">
 
     <!-- Top Ad -->
     <div class="ad-box">
-        🔸 Ad Space (Top Banner) <br>
-        <!-- Paste AdSense / Ad Network Code Here -->
+        🔸 Ad Space (Top Banner)
     </div>
 
     <div class="product">
         <h2>🔥 Digital Pack Name</h2>
+
+        <!-- Preview Image -->
+        <img src="assets/pre.png" alt="Product Preview" class="preview-img">
+
         <p>
-            This free digital product includes high-quality resources.
-            No payment required — supported by ads.
+            High-quality digital product.  
+            100% free download – supported by ads.
         </p>
 
         <!-- Middle Ad -->
@@ -118,8 +130,7 @@
             "Preparing download... Please wait";
 
         setTimeout(() => {
-            window.location.href = "assets/Untitled.ffx"; 
-            // replace with your real file link
+            window.location.href = "assets/Untitled.ffx";
         }, 3000);
     }
 </script>
